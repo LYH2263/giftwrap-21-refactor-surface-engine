@@ -363,6 +363,50 @@ button.ribbon:hover {
   padding-left: 0.35rem;
 }
 
+.item-list li details {
+  width: 100%;
+}
+
+.item-list li summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+  cursor: pointer;
+  list-style: none;
+}
+
+.item-list li summary::-webkit-details-marker {
+  display: none;
+}
+
+.run-detail {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.5rem 1.25rem;
+  margin: 0.75rem 0 0.35rem;
+  padding: 0.75rem 0.9rem;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.run-detail div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.run-detail dt {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+.run-detail dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+
 .item-list a {
   color: var(--ink);
   font-weight: 600;
